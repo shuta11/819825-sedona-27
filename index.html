@@ -2,62 +2,191 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+	<title>HTML Academy: Седона</title>
+	<style>
+		ul {
+		 margin-left: 0; /* Отступ слева в браузере IE и Opera */
+		 padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+		}
+	   </style>
   </head>
-  <body>
-  	<header>
-  		<nav>
+   <body>
+	   <div class="container shadows">
+  	     <header class="header">
+  		  <nav>
   			<ul>
   				<li><a href="info.html">Информация</a></li>
 				<li><a href="galery.html">Фото и видео</a></li>
-				<li><a><img src="img/logo.svg"></a>
+				<li><a href="catalog.html"><img src="img/logo-sedona.svg" width="140" height="72"></a>
   				<li><a href="map.html">Карта штата</a></li>
-  				<li><a href="hotels.html">Гостиницы</a></li>
+  				<li><a href="catalog.html">Гостиницы</a></li>
   			</ul>
-  		</nav>
-  	</header>
+  		  </nav>
+  	    </header>
     <main>
-
+		<section class="intro">	
 		<h1>Проект Седона</h1>
 
-		<img src="https://via.placeholder.com/150x100" alt="Картинка Седона">
-		<section>
-			<h2>Описание</h2>
-			<p>
-				Седона — небольшой городок в Аризоне,<br>
-                заслуживающий большего!
-			</p>
+		<img src="img/background photo.png" alt="Картинка Седона" width="1200" height="773">
+		<img src="img/intro-welcome.svg" width="459" height="353">
+		<img src="img/polygon.png" width="1203" height="59">
+		</section>
+		<section class="info-city">
+			<h2>Седона — небольшой городок в Аризоне, заслуживающий большего!            
+			</h2>
 			<p>
 				Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
 			</p>
+		</section>	
+		<section class="cause">
+			<section class="first cause">
+				<section class="cause-description">
+					<h2>Настоящий городок
+					</h2>
+					<span class="cause-number">	— №1 —
+					</span>
+					<p>
+						Седона — не аттракцион для туристов, там течет своя жизнь
+					</p>
+				</section>
+				<section class="foto feature-picture">
+					<img src="img/feature-picture.png" width="800" height="256" alt="Настоящий городок">
+				</section>	
+			</section>	
+			<section class="cause-housing-food-souvenirs">
+				<section class="cause-description housing">
+					<img src="img/icon-1.svg" width="75" height="72" alt="Жилье">
+					<h2>Жильё</h2>
+					<p>Рекомендуем пожить в настоящем мотеле, все как в кино!
+					</p>
+				</section>
+				<section class="cause-description food">
+					<img src="img/icon-3.svg" width="74" height="70" alt="Еда">
+					<h2>Еда</h2>
+					<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+					</p>
+				</section>
+				<section class="cause-description souvenirs">
+					<img src="img/icon-2.svg" width="64" height="76" alt="Сувениры">
+					<h2>
+						Сувениры
+					</h2>
+					<p>
+						Не только китайского, но и местного производства!
+                    </p>
+				</section>
+			</section>
+			<section class="cause-five">
+				<section class="cause-foto bridge">
+					<img src="img/bridge.jpg" width="800" height="256" alt="Мост дьявола">
+				</section>
+				<section class="cause-description">
+					<h2>
+						Там есть мост дьявола
+					</h2>
+					<span class="cause-number">	
+						— №2 — 
+					</span>
+					<p>
+						Да, по нему можно пройти! Если конечно Вы осмелитесь
+                    </p>
+				</section>
+			</section>
+			<section class="other three cause">
+				<section class="cause-description">
+					<h2>
+						Небольшая площадь
+					</h2>
+					<span class="cause-number">
+						— №3 —
+					</span>
+					<p>
+						Все достопримечательности находятся очень близко
+					</p>
+				</section>
+				<section class="cause-description">
+					<h2>
+						Красивая дорого
+					</h2>
+					<span class="cause-number">
+						— №4 —
+					</span>
+					<p>
+						Ехать в Седону из Лас-Вегаса совсем не скучно!
+                    </p>
+				</section>
+				<section class="cause-description">
+					<h2>
+						Мало туристов
+					</h2>
+					<span class="cause-number">
+						— №5 —
+					</span>
+					<p>
+						Большинство едет в Гранд Каньен и толпится там
+                    </p>
+				</section>
+			</section>
 		</section>
-		<section>
-			<h2>Заинтересовались?</h2>
+		<section class="search">
+			<h2>
+				Заинтересовались?
+			</h2>
 			<p>
 				Укажите предполагаемые даты поездки, <br>
-				и мы покажем вам лучшие предложения гостиниц в седоне
+				и мы покажем вам лучшие предложения гостиниц в Седоне
 			</p>
+			<button type="button" id="search" class="button-search">Поиск гостиницы в Седоне</button>
+		    <section class="search-hotels">
+			  <form class="search-form" action="#" method="POST"></form>
+				<div class="fields">
+					<label for="arrival-date">Дата заезда:</label>
+					<input type="text" name="arrival-date" id="arrival-date" placeholder="24 апреля 2017" required> 
+					<img src="img/calendar.svg" width="21" height="22">
+				</div>
+			    <div class="fields">
+					<label for="departure-date">Дата выезда:</label>
+					<input type="text" name="departure-date" id="departure-date" placeholder="4 июля 2017" required> 
+					<img src="img/calendar.svg" width="21" height="22">
+				</div>
+				<div class="search-quantity">
+					<label for="adults">Взрослые:</label>
+					<div class="adult">
+						<button type="button" class="button minus">-</button>
+						<button type="button" class="button plus">+</button>
+					</div>
+				</div>
+				<div class="search-quantity">
+					<label for="children">Дети:</label>
+					<div class="child">
+						<button type="button" class="button minus">-</button>
+						<button type="button" class="button plus">+</button>
+					</div>
+				</div>
+				<input type="submit" value="Найти">
+				</form>
+		    </section>	
 		</section>
-		<section>
-			<h3>Поиск гостиницы в Седоне</h3>
-			<!--Здесь будет форма-->
+		<section id="map" class="map">
+			Карта
 		</section>
 	</main>
-	<footer>
-		<p>
-			#VISITSEDONA<br>
-			Тел: +7(495) 666-02-66
+	<footer class="footer links">
+	    <div class="footer-instagramm">
+			<a href="https://instaframm.com">#VISITSEDONA</a>
+		</div>	
+		<p>Тел: +7(495) 666-02-66
 		</p>
-		<div>
-			<a href="#">Вконтакте</a>
-			<a href="#">Фейсбук</a>
-			<a href="#">Ютуб</a>
+		<div class="footer-social">
+			<a class="social-button-tw" href="https://twitter.com"><img src="img/twitter.svg" width="46" height="48">Твиттер</a>
+			<a class="social-button-fb" href="https://facebook.com"><img src="img/fb-icon.svg" width="46" height="48">Фэйсбук</a>
+			<a class="social-button-youtube" href="https://youtube.com"><img src="img/youtube.svg" width="46" height="48">Ютуб</a>
 		</div>
-		<p>
-			Website by
-			<a href="https://htmlacademy.ru">html academy</a>
-		</p>
+		<div class="footer-copyright">
+		<p>Website by</p>
+		<a class="copyright" href="https://htmlacademy.ru"><img src="img/logo-htmlacademy.svg" width="115" height="41"></a>
+		</div>
 	</footer>
-
+    </div>
   </body>
 </html>
