@@ -28,6 +28,68 @@
   		</nav>
       </header>
       <main>
+        <section class="filters">
+            <form class="filter-fields" action="#" method="GET">
+                <div class="filters-infrastructure">
+                    <h3>Инфраструктура:</h3>
+                    <input type="checkbox" name="pool" id="pool" checked>
+                    <label for="pool">
+                        Бассейн
+                    </label>
+                    <input type="checkbox" name="parking" id="parking">
+                    <label for="parking">
+                        Парковка
+                    </label>
+                    <input type="checkbox" name="wi-fi" id="wi-fi">
+                    <label for="wi-fi">
+                        WI-FI
+                    </label>
+                </div>
+                <div class="filters-type-housing">
+                    <h3>Тип жилья:</h3>
+                    <input type="checkbox" name="hotel" id="hotel" checked>
+                    <label for="hotel">
+                        Гостиница
+                    </label>
+                    <input type="checkbox" name="motel" id="motel" checked>
+                    <label for="motel">
+                        Мотель
+                    </label>
+                    <input type="checkbox" name="apartments" id="apartments" checked>
+                    <label for="apartments">
+                        Апартаменты
+                    </label>
+                </div>
+                <div class="filters-price">
+                    <h3>Стоимость в сутки(р):</h3>
+                    <div class="range-price">
+                        <label class="min-price">
+                            от 
+                            <input type="text" name="min-price" value="0">
+                        </label>
+                        <label class="max-price">
+                            до
+                            <input type="text" name="max-price" value="3000">
+                        </label>
+                    </div>
+                    <div class="range">
+                        <div class="length"></div>
+                        <span class="range-min"></span>
+                        <span class="range-max"></span>
+                    </div>
+                    <input type="submit" value="Показать">
+                </div>
+            </form>
+        </section>  
+        <section class="sorting">
+            <span class="found">Найдено: 3</span>
+            <div class="filters">
+                <span>Сортировка:</span>
+                <a class="price" href="#">По цене</a>
+                <a class="type" href="#">По типу</a>
+                <a class="rating" href="#">По рейтингу</a>
+            </div>
+        </section>
         <section class="results">
             <div class="basic-information">
               <div class="results-img">

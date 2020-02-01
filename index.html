@@ -25,7 +25,7 @@
   	    </header>
     <main>
 		<section class="intro">	
-		<h1>Проект Седона</h1>
+		<h1 class="visually-hidden">Проект Седона</h1>
 
 		<img src="img/background photo.png" alt="Картинка Седона" width="1200" height="773">
 		<img src="img/intro-welcome.svg" width="459" height="353">
@@ -137,22 +137,23 @@
 				и мы покажем вам лучшие предложения гостиниц в Седоне
 			</p>
 			<button type="button" id="search" class="button-search">Поиск гостиницы в Седоне</button>
-		    <section class="search-hotels">
+		    <div class="search-hotels">
 			  <form class="search-form" action="#" method="POST"></form>
 				<div class="fields">
 					<label for="arrival-date">Дата заезда:</label>
 					<input type="text" name="arrival-date" id="arrival-date" placeholder="24 апреля 2017" required> 
-					<img src="img/calendar.svg" width="21" height="22">
+					<span class="fields-after"></span>
 				</div>
 			    <div class="fields">
 					<label for="departure-date">Дата выезда:</label>
 					<input type="text" name="departure-date" id="departure-date" placeholder="4 июля 2017" required> 
-					<img src="img/calendar.svg" width="21" height="22">
+					<span class="field-after"></span>
 				</div>
 				<div class="search-quantity">
 					<label for="adults">Взрослые:</label>
 					<div class="adult">
 						<button type="button" class="button minus">-</button>
+						<input type="text" name="adults" id="adults" value="2">
 						<button type="button" class="button plus">+</button>
 					</div>
 				</div>
@@ -160,16 +161,20 @@
 					<label for="children">Дети:</label>
 					<div class="child">
 						<button type="button" class="button minus">-</button>
+						<input type="text" name="children" id="children" value="0">
 						<button type="button" class="button plus">+</button>
 					</div>
 				</div>
 				<input type="submit" value="Найти">
 				</form>
-		    </section>	
+		    </div>	
 		</section>
 		<section id="map" class="map">
-			Карта
+			<h2 class="visually-hidden">Карта</h2>
 		</section>
+		<p>
+			<img src="img/map.png" width="1200" height="593" alt="Расположение на карте города Седона">
+		</p>
 	</main>
 	<footer class="footer links">
 	    <div class="footer-instagramm">
