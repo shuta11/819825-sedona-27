@@ -1,14 +1,31 @@
-  body,h2,h3{
-      line-height:21px
-    }
-  body{
-    margin:0;
-    min-width: 1200px;
-    font-family:"PT Sans","Arial",sans-serif;
-    color: black;
-    text-transform:uppercase;
-    background-color:#f2f2f2;
+body,h2,h3{
+  line-height:21px
 }
+
+h2,h3{
+  font-weight:700;
+  font-size:21px
+}
+
+
+body{
+  margin:0;
+  min-width: 1200px;
+  font-family:"PT Sans","Arial",sans-serif;
+  color: black;
+  text-transform:uppercase;
+  background-color:#f2f2f2;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+
 
 .container {
   width: 1200px;
@@ -37,8 +54,8 @@
   margin: 0;
   padding-right: 72px;
   padding-left: 72px;
-  list-style: none;
-  
+  list-style: none;  
+
 }
 
 
@@ -77,8 +94,412 @@
 }
 
 
+main{
+  background-color:#ffffff;
+}
+
+.intro{
+  min-height:510px;
+  background:url(../img/welcome.png) 50% 50% no-repeat,
+  url(../img/background-photo.png) 0 28% no-repeat,
+  url(../img/polygon.jpg)50% 100% no-repeat;
+  background-color:#5496bd;
+  margin-bottom:61px;
+}
+
+.info-city{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 50px;
+  
+}
+
+.info-city h2{
+  width: 440px;
+  font-family: "PT Sans","Arial",sans-serif;
+  line-height: 26px;
+  padding:0;
+  margin:0 auto 28px;
+  
+}
+
+.info-city p{
+  margin:0;
+  color:#333333;
+  line-height:26px;
+  font-family: "PT Sans","Arial",sans-serif;
+  width: 489px;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.cause-description{
+  display: flex;
+  flex-direction: column;
+}
+
+.cause-one{
+  display: flex;
+}
+
+.description-one{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  padding: 53px 54px;
+  background-color:#81b3d2;
+  text-align:center;
+  color:#ffffff;
+  width: 33,33%;
+}
+
+.description-one h2{
+  margin:0;
+  padding:0;
+  width:200px;
+}
 
 
+.description-one .cause-number{
+  margin:0;
+  padding-top:24px;
+  padding-bottom:21px;
+  color:#ffffff;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.description-one p{
+  margin: 0;
+  font-family: "PT Sans","Arial",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+}
+
+
+.feature-picture{
+  display: flex;
+  position:relative;
+  background-color:#81b3d2
+}
+
+.clearfix{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.description{
+  margin-bottom:23px;
+  padding:60px 48px 60px;
+  
+}
+
+.description img{
+  margin-bottom: 32px;
+  width: 66,66%;
+}
+
+.description h2{
+  font-family: "PT Sans","Arial",sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;
+  margin:0 auto 23px;
+}
+
+.description p{
+  margin:0;
+  color:#333333;
+  width: 285px;
+  font-family: "PT Sans","Arial",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+
+.cause{
+  display: flex;
+}
+
+
+.description-two{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  padding: 53px 48px;
+  background-color:#81b3d2;
+  text-align:center;
+  color:#ffffff;
+  width: 33,33%;
+}
+
+
+.description-two h2{
+  margin:0;
+  padding:0;
+  width:200px;
+}
+
+
+.description-two .cause-number{
+  margin:0;
+  padding-top:24px;
+  padding-bottom:21px;
+  color:#ffffff;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.description-two p{
+  margin: 0;
+  font-family: "PT Sans","Arial",sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+  width: 303px;
+}
+
+
+.cause-other{
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  background-color: #eeeeee;
+  justify-content: space-around;
+}
+
+
+.description{
+  display: flex;
+  flex-direction: column;
+  padding: 48px 65px;
+  margin-bottom: 10px;
+}
+
+
+.description h2{
+  width: 120px;
+  font-family: "PT Sans","Arial",sans-serif;
+  color: #000000;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+
+.description .cause-number{
+  margin-bottom:  20px;
+  color:#333333;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.description p{
+  font-family: "PT Sans","Arial",sans-serif;
+  color: #333333;
+  font-size: 14px;
+  width: 208px;
+  line-height: 21px;
+}
+
+
+.search{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 55px;
+}
+
+.search h2{
+  font-family: "PT Sans","Arial",sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 36px;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+
+.search p{
+  font-family: "PT Sans","Arial",sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  color: #333333;
+  margin-top: 0;
+  margin-bottom: 48px;
+}
+
+.search .button-search{
+  font-family: "PT Sans","Arial",sans-serif;
+  width:568px;
+  padding:30px 0;
+  background-color:#766357;
+  border:none;
+  color:#fff;
+  line-height:26px;
+  cursor:pointer;
+  font-size:21px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+  }
+
+.search .button-search:hover{   /*Цвет кнопки при наведении курсора*/
+  background-color: #604e43;
+}
+  
+.search .button-search:focus{    /*Цвет кнопки при нажатии*/
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
+.map p{
+  margin: 0;
+}
+
+
+.footer-contacts{
+  display: flex;
+  justify-content: space-around;
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
+
+.footer-contacts a{
+  text-decoration: none;
+}
+
+.footer-link{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-link a{
+  font-family: "PT Sans","Arial",sans-serif;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  color: #000000;
+}
+
+.footer-social{
+  display: flex;
+}
+
+.social-button {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 48px;
+  margin-right: 6px;
+  vertical-align: top;
+  background-color: #81b3d2;
+}  
+
+.social-button:hover{
+  background-color: #669ec0;
+}
+
+.social-button:focus{
+  background: #5496bd;
+  opacity: 0.3;
+}
+
+
+
+.footer-copyright{
+  display: flex;
+  align-items: center;
+}
+
+
+
+.footer-copyright p{
+  font-family: "PT Sans","Arial",sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+  margin: 0 8px 0 0;
+  
+}
+
+.footer-copyright .copyright{
+  color: #231f20;
+}
+
+
+
+.modal-search{
+  display: flex;
+  flex-direction: column;
+}
+
+
+.modal-search{
+  display: flex;
+  width: 568px;
+  box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+  position:absolute;
+  background-color:#fff;
+}
+
+
+.search-quantity{
+  display: flex;
+  justify-content: center;
+}
+
+.fields{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position:relative;
+  margin-bottom:30px;
+  clear:both;
+}
+
+.search-form input{
+  font-family: "PT Sans","Arial",sans-serif;
+  font-size:14px;
+  padding-top:6px;
+  padding-bottom:6px;
+  padding-left: 12px;
+  background-color:#f2f2f2;
+  line-height:26px;
+  border:none;
+  color: #000000;
+  font-weight: bold;
+  text-align: left;
+  width: 346px;
+}
+
+.search-form label{
+  font-family: "PT Sans","Arial",sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 26px;
+  text-align: left;
+  color: #000000;
+  
+ }
 
 
 
@@ -86,121 +507,8 @@
 
 /*
 
-.navigation-item a:focus {
-  color: rgba(0, 0, 0, 0.3);  /*Цвет ссылки при нажатии */
-} 
 
-.info-city{     Информация о городе
-  margin-bottom:50px;
-  text-align:center;
-  color:#000000;
-}
 
-.info-city h2{    Для текста о городе
-  display:block;
-  padding:0;
-  margin:0 auto 28px;
-  width:450px;
-  line-height:26px;
-}
-
-.info-city p{    Причины
-  margin:0;
-  font: inherit;
-  font-size: 14px;
-  line-height: 26px;
-  color: #333333;
-}
-
-.search {    Блок поиска гостиниц
-  position: relative;
-  margin: 0;
-  text-align: center;
-  color: #333333;
-}
-
-.search h2{       Для текста из блока поиска
-  margin:0 0 30px;
-  padding:0;
-  font-size:30px;
-  line-height:24px;
-  color: #000000;
-}
-
-.search p{        
-  margin:0 0 48px;
-  line-height:24px;
-  color: #333333;
-}
-
-.modal-search,    Поле выбора гостиниц
-.search .button-search,
-.search-hotels .label,
-.search-form button{
-  font-family:"PT Sans","Arial",sans-serif;
-  text-transform:uppercase;
-  text-align: center;
-  font-weight:bold;
-}
-
-.search .button-search{   Кнопка поиск гостиниц
-  width: 568px;
-  height: 86px;
-  background-color: #766357;
-  border:none;
-  color:#ffffff;
-  line-height:26px;
-  cursor:pointer;
-  font-size:21px;
-}
- 
-.search .button-search:hover{ Цвет кнопки при наведении курсора
-  background-color: #604e43;
-}
-
-.search .button-search:focus{ Цвет кнопки при нажатии
-  background-color: #503e33;
-}
-
-/*.modal-search{     Модальная форма
-  position:absolute;
-  width: 568px;
-  height: 395;
-  padding:55px;
-  box-sizing:border-box;
-  background-color:#ffffff;
-  box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
-  visibility:visible;
-}
-
-.fields{     Строки дата заезда и дата выезда
-  position:relative;
-  margin-bottom:29px;
-  text-align:left;
-}
-
-/*.search-hotels .label,
-.search-form input{
-  font-family: "PT Sans","Arial",sans-serif;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.search-hotel .label{
-  float:left;
-  line-height:26px;
-}
-
-.search-form input{
-  padding-top:6px;
-  padding-bottom:6px;
-  background-color:#f2f2f2;
-  line-height:26px;
-  border:none;  
-  width:346px;
-  padding-left:13px;
-}
- 
 .fields input:hover{     Цвет кнопки при наведении курсора мыши
   background-color:#ebebeb;
 }
@@ -254,8 +562,8 @@
   width:38px;
   height:38px;
   text-align:center;
-  font-size:14px;*/
-}
+  font-size:14px;
+}*/
 
 /*.search-wrapper label{
   margin-left:55px;

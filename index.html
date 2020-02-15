@@ -22,13 +22,13 @@
   		    <nav>
   			  <ul class="site-navigation">
   				  <li>
-					  <a href="info.html">Информация</a>
+					  <a href="#">Информация</a>
 				  </li>
 				  <li>
-					<a href="galery.html">Фото и видео</a>
+					<a href="#">Фото и видео</a>
 				  </li>
 				  <li>
-					<a href="map.html">Карта штата</a>
+					<a href="#">Карта штата</a>
 				  </li>
   				  <li>
 					  <a href="catalog.html">Гостиницы</a>
@@ -37,22 +37,20 @@
 		    </nav>	    
   	     </header>
     <main>
-		<section class="intro">	
+		<div class="intro">	
 			<h1 class="visually-hidden">Проект Седона</h1>
-
-			<img src="img/intro-welcome.svg" width="459" height="353">
-		</section>
-		<section class="info-city">
+		</div>
+		<div class="info-city">
 			<h2>Седона — небольшой городок в Аризоне,
 				 заслуживающий большего!            
 			</h2>
 			<p>
 				Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
 			</p>
-		</section>	
+		</div>	
 		<section class="cause-description">
-			<div class="cause">
-				<div class="description">
+			<div class="cause-one">
+				<div class="description-one">
 					<h2>Настоящий городок</h2>
 					<span class="cause-number">	— №1 —</span>
 					<p>
@@ -60,12 +58,12 @@
 					</p>
 				</div>
 			<div class="feature-picture">
-					<img src="img/feature-picture.png" width="800" height="256" alt="Настоящий городок">
+					<img src="img/feature-picture.jpg" width="800" height="256" alt="Настоящий городок">
 			</div>	
 			</div>	
-			<div class="cause">
+			<div class="clearfix">
 				<div class="description">
-					<div class="icon">
+					<div class="icon-1">
 						<img src="img/icon-1.svg" width="75" height="72" alt="Жилье">
 					</div>	
 					<h2>Жильё</h2>
@@ -73,7 +71,7 @@
 					</p>
 				</div>
 				<div class="description">
-					<div class="icon">
+					<div class="icon-3">
 						<img src="img/icon-3.svg" width="74" height="70" alt="Еда">
 					</div>	
 					<h2>Еда</h2>
@@ -81,7 +79,7 @@
 					</p>
 				</div>
 				<div class="description">
-					<div class="icon">
+					<div class="icon-2">
 						<img src="img/icon-2.svg" width="64" height="76" alt="Сувениры">
 					</div>
 					<h2>
@@ -96,9 +94,9 @@
 				<div class="feature-picture">
 					<img src="img/bridge.jpg" width="800" height="256" alt="Мост дьявола">
 				</div>
-				<div class="description">
+				<div class="description-two">
 					<h2>
-						Там есть мост дьявола
+						Там есть<br> мост дьявола
 					</h2>
 					<span class="cause-number">	
 						— №2 — 
@@ -108,6 +106,7 @@
                     </p>
 				</div>
 			</div>
+			<div class="cause-other">
 				<div class="description">
 					<h2>
 						Небольшая площадь
@@ -141,6 +140,7 @@
 						Большинство едет в Гранд Каньен и толпится там
                     </p>
 				</div>
+			</div>	
 		</section>
 		<section class="search">
 			<h2>
@@ -151,64 +151,63 @@
 				и мы покажем вам лучшие предложения гостиниц в Седоне
 			</p>
 			<button type="button" id="search" class="button-search">Поиск гостиницы в Седоне</button>
-		    	
+		    <div class="modal-search">
+				<form class="search-form" action="#" method="POST">
+				  <div class="fields">
+					  <label for="arrival-date">Дата заезда:</label>
+					  <input type="text" name="arrival-date" id="arrival-date" placeholder="24 апреля 2017" required> 
+					  <span class="fields-after"></span>
+				  </div>
+				  <div class="fields">
+					  <label for="departure-date">Дата выезда:</label>
+					  <input type="text" name="departure-date" id="departure-date" placeholder="4 июля 2017" required> 
+					  <span class="fields-after"></span>
+					  
+				  </div>
+				  <div class="search-quantity">
+					  <label for="adults">Взрослые:</label>
+					  <div class="adult">
+						  <button type="range" class="button-minus">-</button>
+						  <input type="text" name="adults" id="adults" value="2">
+						  <button type="button" class="button-plus">+</button>
+					  </div>
+				  </div>
+				  <div class="search-quantity">
+					  <label for="children">Дети:</label>
+					  <div class="child">
+						  <button type="button" class="button-minus">-</button>
+						  <input type="text" name="children" id="children" value="0">
+						  <button type="button" class="button-plus">+</button>
+					  </div>
+				  </div>
+				  <button type="button">Найти</button>	
+				</form>
+			</div>		  	
 		</section>
-		<section id="map" class="map">
+		<div id="map" class="map">
 			<h2 class="visually-hidden">Карта</h2>
-		</section>
 		<p>
 			<img src="img/map.png" width="1200" height="593" alt="Расположение на карте города Седона">
 		</p>
-	</main>
-	<footer class="footer links">
-	    <div class="footer-instagramm">
-			<a href="https://instaframm.com">#VISITSEDONA</a>
-		</div>	
-		<div class="footer-tel">
-			<a href="tel:+7(495) 666-02-66">Тел: +7(495) 666-02-66</a>
 		</div>
+	</main>
+	<footer class="footer">
+		<div class="footer-contacts">
+	    <div class="footer-link">
+			<a href="https://instaframm.com">#VISITSEDONA</a>
+			<a href="tel:+7(495) 666-02-66">Тел: +7(495) 666-02-66</a>
+		</div>	
 		<div class="footer-social">
-			<a class="social-button-tw" href="https://twitter.com"><img src="img/twitter.svg" width="46" height="48">Твиттер</a>
-			<a class="social-button-fb" href="https://facebook.com"><img src="img/fb-icon.svg" width="46" height="48">Фэйсбук</a>
-			<a class="social-button-youtube" href="https://youtube.com"><img src="img/youtube.svg" width="46" height="48">Ютуб</a>
+			<a class="social-button twitter" href="https://twitter.com"><img src="img/twitter.svg" width="17" height="15"></a>
+			<a class="social-button fb" href="https://facebook.com"><img src="img/fb-icon.svg" width="12" height="22"></a>
+			<a class="social-button youtube" href="https://youtube.com"><img src="img/youtube.svg" width="20" height="16"></a>
 		</div>
 		<div class="footer-copyright">
 		<p>Website by</p>
 		<a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41"></a>
 		</div>
+		</div>		
 	</footer>
 	</div>
-	<div class="modal-search">
-		<form class="search-form" action="#" method="POST">
-		  <div class="fields">
-			  <label for="arrival-date">Дата заезда:</label>
-			  <input type="text" name="arrival-date" id="arrival-date" placeholder="24 апреля 2017" required> 
-			  <span class="fields-after"></span>
-		  </div>
-		  <div class="fields">
-			  <label for="departure-date">Дата выезда:</label>
-			  <input type="text" name="departure-date" id="departure-date" placeholder="4 июля 2017" required> 
-			  <span class="fields-after"></span>
-			  
-		  </div>
-		  <div class="search-quantity">
-			  <label for="adults">Взрослые:</label>
-			  <div class="adult">
-				  <button type="range" class="button-minus">-</button>
-				  <input type="text" name="adults" id="adults" value="2">
-				  <button type="button" class="button-plus">+</button>
-			  </div>
-		  </div>
-		  <div class="search-quantity">
-			  <label for="children">Дети:</label>
-			  <div class="child">
-				  <button type="button" class="button-minus">-</button>
-				  <input type="text" name="children" id="children" value="0">
-				  <button type="button" class="button-plus">+</button>
-				  <button type="button">Найти</button>	
-			  </div>
-		  </div>
-		</form>
-	</div>		  
   </body>
 </html>
