@@ -3,58 +3,100 @@
     }
   body{
     margin:0;
-    padding:0 20px;
-
+    min-width: 1200px;
     font-family:"PT Sans","Arial",sans-serif;
-    font-size:14px;
-    font-weight:400;
     color: black;
     text-transform:uppercase;
-
     background-color:#f2f2f2;
 }
 
-
-
-a{
-    text-decoration: none;
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
 
-
-.main-navigation {     /*Для блока навигации*/
+.main-header{
+  position: relative;
+  font-weight: bold;
   font-size: 14px;
   line-height: 26px;
-  font-weight: bold;
-  color: #000000;
-
-  background-color:#ffffff;
 }
 
-.site-navigation{    /*Для списка навигации*/
+.header-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.site-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding-right: 72px;
+  padding-left: 72px;
   list-style: none;
+  
 }
 
-.site-navigation a { /*Цвет обычной ссылки*/
-  color: #000000;
+
+.site-navigation li {
+  display: flex;
+  justify-content: flex-start;
+  flex: 0 0 240px;
+  padding: 15px 0;
+  width: 240px;
+  
 }
 
-.site-navigation a:focus {
-  color: rgba(0, 0, 0, 0.3); /* Цвет ссылки при нажатии */
- } 
- .site-navigation a:hover{ /*Цвет ссылки при наведении на нее курсора мыши*/
-  color: #81b3d2;
+.site-navigation li:nth-child(4n+3),
+.site-navigation li:nth-child(4n+4) {
+    justify-content: flex-end;
 }
-.site-navigation a:visited {
-  color: #766357; /* Цвет посещённой ссылки */
+
+.site-navigation li:nth-child(4n+2) {
+    margin-right: 95px;
+}
+
+
+.site-navigation li a{
+  text-decoration:none;
+  color:#000000;
+  font-weight:700
+  }
+  .site-navigation li.active a{
+  color:#766357;
+  }
+  .site-navigation li a:hover{
+  color:#81b3d2;
+  }
+  .site-navigation li a:focus{
+  color:#cacaca;
+}
+
+
+
+
+
+
+
+
+
+/*
+
+.navigation-item a:focus {
+  color: rgba(0, 0, 0, 0.3);  /*Цвет ссылки при нажатии */
 } 
 
-.info-city{     /*Информация о городе*/
+.info-city{     Информация о городе
   margin-bottom:50px;
   text-align:center;
   color:#000000;
 }
 
-.info-city h2{    /*Для текста о городе*/
+.info-city h2{    Для текста о городе
   display:block;
   padding:0;
   margin:0 auto 28px;
@@ -62,7 +104,7 @@ a{
   line-height:26px;
 }
 
-.info-city p{    /*Причины*/
+.info-city p{    Причины
   margin:0;
   font: inherit;
   font-size: 14px;
@@ -70,14 +112,14 @@ a{
   color: #333333;
 }
 
-.search {    /*Блок поиска гостиниц*/
+.search {    Блок поиска гостиниц
   position: relative;
   margin: 0;
   text-align: center;
   color: #333333;
 }
 
-.search h2{       /*Для текста из блока поиска*/
+.search h2{       Для текста из блока поиска
   margin:0 0 30px;
   padding:0;
   font-size:30px;
@@ -91,17 +133,17 @@ a{
   color: #333333;
 }
 
-.modal-search,    /*Поле выбора гостиниц*/
+.modal-search,    Поле выбора гостиниц
 .search .button-search,
 .search-hotels .label,
-.search-form input{
+.search-form button{
   font-family:"PT Sans","Arial",sans-serif;
   text-transform:uppercase;
   text-align: center;
   font-weight:bold;
 }
 
-.search .button-search{   /*Кнопка поиск гостиниц*/
+.search .button-search{   Кнопка поиск гостиниц
   width: 568px;
   height: 86px;
   background-color: #766357;
@@ -112,15 +154,15 @@ a{
   font-size:21px;
 }
  
-.search .button-search:hover{ /*Цвет кнопки при наведении курсора*/
+.search .button-search:hover{ Цвет кнопки при наведении курсора
   background-color: #604e43;
 }
 
-.search .button-search:focus{ /*Цвет кнопки при нажатии*/
+.search .button-search:focus{ Цвет кнопки при нажатии
   background-color: #503e33;
 }
 
-.modal-search{     /*Модальная форма*/
+/*.modal-search{     Модальная форма
   position:absolute;
   width: 568px;
   height: 395;
@@ -131,13 +173,13 @@ a{
   visibility:visible;
 }
 
-.fields{     /*Строки дата заезда и дата выезда*/
+.fields{     Строки дата заезда и дата выезда
   position:relative;
   margin-bottom:29px;
   text-align:left;
 }
 
-.search-hotels .label,
+/*.search-hotels .label,
 .search-form input{
   font-family: "PT Sans","Arial",sans-serif;
   font-size: 14px;
@@ -159,15 +201,15 @@ a{
   padding-left:13px;
 }
  
-.fields input:hover{     /*Цвет кнопки при наведении курсора мыши*/
+.fields input:hover{     Цвет кнопки при наведении курсора мыши
   background-color:#ebebeb;
 }
-.fields input:focus{      /*Цвет ссылки при нажатии*/
+.fields input:focus{      Цвет ссылки при нажатии
   background-color:#ffffff;
   outline:2px solid #e5e5e5;
 }
 
-.fields-after{      /*Кнопка календарь*/
+/*.fields-after{      Кнопка календарь
   position:absolute;
   object-fit: contain;
   top:9px;
@@ -179,11 +221,11 @@ a{
   background-repeat:no-repeat;
 }
 
-.fields-after:focus{
+/*.fields-after:focus{
   background-color: #81b3d2;
 }
 
-.search-quantity{
+/*.search-quantity{
   float: left;
 }
 
@@ -212,10 +254,10 @@ a{
   width:38px;
   height:38px;
   text-align:center;
-  font-size:14px;
+  font-size:14px;*/
 }
 
-.search-wrapper label{
+/*.search-wrapper label{
   margin-left:55px;
 }
 
@@ -247,7 +289,7 @@ a{
   height: 120px;
 }
 
-.footer-instagramm{
+/*.footer-instagramm{
   float:left;
   padding-top:11px;
   padding-left: 132px;
@@ -283,7 +325,7 @@ a{
 }
 
 
-.footer-social{
+/*.footer-social{
   float:left;
   font-size:0;
 }
@@ -303,7 +345,7 @@ a{
     background-color:#669ec0
 }
 
-.footer-copyright{
+/*.footer-copyright{
   float:left;
   font-size:0;
   padding-top:6px;
@@ -331,105 +373,73 @@ a{
 
 
 
-.results{
+/*.results{
   padding:0 6%
-}
-.basic-information{
-  position:relative;
-  border-bottom:1px solid #e5e5e5;
-  padding:30px 0
-}
-
-.basic-information{
-  content:"";
-  display:table;
-  clear:both
-}
-
-.results-img{
-  float:left;
-  margin-right:30px;
-  width:135px;
-  height:90px
-}
-.results-description{
-  float:left
-}
-
-
-.results-description a{
-  display:block;
-  vertical-align:top;
-  font-size:21px;
-  line-height:26px;
-  color:#000
-}
-.results-description a.title{
-  margin-top:-4px;
-  margin-bottom:6px;
-  padding:0;
-  width:350px
 }
 
 .results-description a.title:active{
   color:rgba(0,0,0,.3)
 }
 
-.results-description-info{
+.results-info{
   float:left;
   margin-right:6px
 }
-.results-description-book span,
-.results-description-info span{
+/*.results-book span,
+.results-info span{
   display:block;
   margin-bottom:14px;
   max-width:150px;
   font-size:14px;
   line-height:21px;
-  color:#333
+  color:#333333
 }
-.results .button{
-  padding:3px 16px;
-  font-size:14px;
-  line-height:21px;
-  color:#fff;
+
+
+.results .button-detailed{
   background-color:#81b3d2;
-  text-align:center
+  color:#ffffff;
 }
 
-.results .more-detailed:active{
-  background-color:#669ec0;
-  color:rgba(255,255,255,.3);
+.results .button-detailed :hover{
+  background-color: #669ec0;
+  color: #ffffff;
+}  
+
+.results .button-detailed:active{
+  background-color:#5496bd;
+  color:rgba(255, 255, 255, 0.3);
 }
 
-.results-description-book{
-  float:left;
-}
-.results .book{
+
+.results .button-book{
   background-color:#766357;
+  color:white;
 }
 
-.results .book:active,
-.results .book:hover{
+/*.results .button-book:hover{
     background-color:#604e43;
 }
-.results .book:active{
-    color:rgba(255,255,255,.3);
+
+.results .button-book:active{
+    background-color: #503e33;
+    color:rgba(255, 255, 255, 0.3);
 }
+
 
 .results-rating{
   float:right;
   min-height:90px;
 }
 
-.results-rating-star{
+.results-star{
   display:inline-block;
   min-height:17px;
   background-image:url(../img/star.svg);
   background-repeat:repeat-x;
 }
 
-.star-5{
+/*.star-5{
   width:120px
 }
 .star-4{
@@ -442,11 +452,12 @@ a{
   width:41px;
 }
 
-.results-rating-number{
+.results-number{
   position:absolute;
   bottom:30px;
   right:0;
   padding:3px 13px;
   background-color:#f2f2f2;
-  color:#666
+  color:#666666;
 }
+*/

@@ -14,27 +14,33 @@
 	   </style>
   </head>
    <body>
-	   <div class="container-shadows">
-  	     <header class="header">
-  		  <nav class="main-navigation">
-  			<ul class="site-navigation">
-  				<li><a href="info.html">Информация</a></li>
-				<li><a href="galery.html">Фото и видео</a></li>
-				<li><a href="map.html">Карта штата</a></li>
-  				<li><a href="catalog.html">Гостиницы</a></li>
+	   <div class="container">
+  	     <header class="main-header">
+			<a class="header-logo" href="catalog.html">
+				<img src="img/logo-sedona.svg" alt="Sedona" width="140" height="72">
+			</a>
+  		    <nav>
+  			  <ul class="site-navigation">
+  				  <li>
+					  <a href="info.html">Информация</a>
+				  </li>
+				  <li>
+					<a href="galery.html">Фото и видео</a>
+				  </li>
+				  <li>
+					<a href="map.html">Карта штата</a>
+				  </li>
+  				  <li>
+					  <a href="catalog.html">Гостиницы</a>
+				  </li>
 			  </ul>
-			  <a class="header-logo" href="catalog.html">
-				  <img src="img/logo-sedona.svg" width="140" height="72">
-				</a>
-  		  </nav>
-  	    </header>
+		    </nav>	    
+  	     </header>
     <main>
 		<section class="intro">	
-		<h1 class="visually-hidden">Проект Седона</h1>
+			<h1 class="visually-hidden">Проект Седона</h1>
 
-		<img src="img/background photo.png" alt="Картинка Седона" width="1200" height="773">
-		<img src="img/intro-welcome.svg" width="459" height="353">
-		<img src="img/polygon.png" width="1203" height="59">
+			<img src="img/intro-welcome.svg" width="459" height="353">
 		</section>
 		<section class="info-city">
 			<h2>Седона — небольшой городок в Аризоне,
@@ -44,49 +50,53 @@
 				Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
 			</p>
 		</section>	
-		<section class="cause">
-			<section class="first cause">
-				<section class="cause-description">
-					<h2>Настоящий городок
-					</h2>
-					<span class="cause-number">	— №1 —
-					</span>
+		<section class="cause-description">
+			<div class="cause">
+				<div class="description">
+					<h2>Настоящий городок</h2>
+					<span class="cause-number">	— №1 —</span>
 					<p>
 						Седона — не аттракцион для туристов, там течет своя жизнь
 					</p>
-			</section>
-			<section class="foto feature-picture">
+				</div>
+			<div class="feature-picture">
 					<img src="img/feature-picture.png" width="800" height="256" alt="Настоящий городок">
-			</section>	
-		</section>	
-			<section class="cause-housing-food-souvenirs">
-				<section class="cause-description housing">
-					<img src="img/icon-1.svg" width="75" height="72" alt="Жилье">
+			</div>	
+			</div>	
+			<div class="cause">
+				<div class="description">
+					<div class="icon">
+						<img src="img/icon-1.svg" width="75" height="72" alt="Жилье">
+					</div>	
 					<h2>Жильё</h2>
 					<p>Рекомендуем пожить в настоящем мотеле, все как в кино!
 					</p>
-				</section>
-				<section class="cause-description food">
-					<img src="img/icon-3.svg" width="74" height="70" alt="Еда">
+				</div>
+				<div class="description">
+					<div class="icon">
+						<img src="img/icon-3.svg" width="74" height="70" alt="Еда">
+					</div>	
 					<h2>Еда</h2>
 					<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!
 					</p>
-				</section>
-				<section class="cause-description souvenirs">
-					<img src="img/icon-2.svg" width="64" height="76" alt="Сувениры">
+				</div>
+				<div class="description">
+					<div class="icon">
+						<img src="img/icon-2.svg" width="64" height="76" alt="Сувениры">
+					</div>
 					<h2>
 						Сувениры
 					</h2>
 					<p>
 						Не только китайского, но и местного производства!
                     </p>
-				</section>
-			</section>
-			<section class="cause-five">
-				<section class="cause-foto bridge">
+				</div>
+			</div>
+			<div class="cause">
+				<div class="feature-picture">
 					<img src="img/bridge.jpg" width="800" height="256" alt="Мост дьявола">
-				</section>
-				<section class="cause-description">
+				</div>
+				<div class="description">
 					<h2>
 						Там есть мост дьявола
 					</h2>
@@ -96,10 +106,9 @@
 					<p>
 						Да, по нему можно пройти! Если конечно Вы осмелитесь
                     </p>
-				</section>
-			</section>
-			<section class="other three cause">
-				<section class="cause-description">
+				</div>
+			</div>
+				<div class="description">
 					<h2>
 						Небольшая площадь
 					</h2>
@@ -109,10 +118,10 @@
 					<p>
 						Все достопримечательности находятся очень близко
 					</p>
-				</section>
-				<section class="cause-description">
+				</div>
+				<div class="description">
 					<h2>
-						Красивая дорого
+						Красивая дорога
 					</h2>
 					<span class="cause-number">
 						— №4 —
@@ -120,8 +129,8 @@
 					<p>
 						Ехать в Седону из Лас-Вегаса совсем не скучно!
                     </p>
-				</section>
-				<section class="cause-description">
+				</div>
+				<div class="description">
 					<h2>
 						Мало туристов
 					</h2>
@@ -131,8 +140,7 @@
 					<p>
 						Большинство едет в Гранд Каньен и толпится там
                     </p>
-				</section>
-			</section>
+				</div>
 		</section>
 		<section class="search">
 			<h2>
@@ -157,7 +165,7 @@
 			<a href="https://instaframm.com">#VISITSEDONA</a>
 		</div>	
 		<div class="footer-tel">
-			<a href="#">Тел: +7(495) 666-02-66</a>
+			<a href="tel:+7(495) 666-02-66">Тел: +7(495) 666-02-66</a>
 		</div>
 		<div class="footer-social">
 			<a class="social-button-tw" href="https://twitter.com"><img src="img/twitter.svg" width="46" height="48">Твиттер</a>
@@ -187,7 +195,7 @@
 			  <label for="adults">Взрослые:</label>
 			  <div class="adult">
 				  <button type="range" class="button-minus">-</button>
-				  <input type="number" name="adults" id="adults" value="2">
+				  <input type="text" name="adults" id="adults" value="2">
 				  <button type="button" class="button-plus">+</button>
 			  </div>
 		  </div>
@@ -195,12 +203,12 @@
 			  <label for="children">Дети:</label>
 			  <div class="child">
 				  <button type="button" class="button-minus">-</button>
-				  <input type="number" name="children" id="children" value="0">
+				  <input type="text" name="children" id="children" value="0">
 				  <button type="button" class="button-plus">+</button>
+				  <button type="button">Найти</button>	
 			  </div>
 		  </div>
 		</form>
-	</div>
-  		  <input type="submit" value="Найти">
+	</div>		  
   </body>
 </html>
