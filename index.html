@@ -7,11 +7,16 @@
 	<link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 	<style>
+		.pic {
+			text-align: center;
+			padding-top: 61px;
+		}
 		ul {
 		 margin-left: 0; /* Отступ слева в браузере IE и Opera */
 		 padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
 		}
 	   </style>
+	   
   </head>
    <body>
 	   <div class="container">
@@ -38,10 +43,11 @@
   	     </header>
     <main>
 		<div class="intro">	
+			<p class="pic"><img src="img/welcome.png" width="459px" height="353px" alt="Welcome"></p>
 			<h1 class="visually-hidden">Проект Седона</h1>
 		</div>
 		<div class="info-city">
-			<h2>Седона — небольшой городок в Аризоне,
+			<h2 class="info">Седона — небольшой городок в Аризоне,<br>
 				 заслуживающий большего!            
 			</h2>
 			<p>
@@ -49,7 +55,7 @@
 			</p>
 		</div>	
 		<section class="cause-description">
-			<div class="cause-one">
+			<div class="cause">
 				<div class="description-one">
 					<h2>Настоящий городок</h2>
 					<span class="cause-number">	— №1 —</span>
@@ -61,9 +67,9 @@
 					<img src="img/feature-picture.jpg" width="800" height="256" alt="Настоящий городок">
 			</div>	
 			</div>	
-			<div class="clearfix">
+			<div class="reason">
 				<div class="description">
-					<div class="icon-1">
+					<div class="description-img">
 						<img src="img/icon-1.svg" width="75" height="72" alt="Жилье">
 					</div>	
 					<h2>Жильё</h2>
@@ -71,7 +77,7 @@
 					</p>
 				</div>
 				<div class="description">
-					<div class="icon-3">
+					<div class="description-img">
 						<img src="img/icon-3.svg" width="74" height="70" alt="Еда">
 					</div>	
 					<h2>Еда</h2>
@@ -79,7 +85,7 @@
 					</p>
 				</div>
 				<div class="description">
-					<div class="icon-2">
+					<div class="description-img">
 						<img src="img/icon-2.svg" width="64" height="76" alt="Сувениры">
 					</div>
 					<h2>
@@ -106,7 +112,7 @@
                     </p>
 				</div>
 			</div>
-			<div class="cause-other">
+			<div class="cause">
 				<div class="description">
 					<h2>
 						Небольшая площадь
@@ -192,8 +198,7 @@
 		</div>
 	</main>
 	<footer class="footer">
-		<div class="footer-contacts">
-	    <div class="footer-link">
+		<div class="footer-link">
 			<a href="https://instaframm.com">#VISITSEDONA</a>
 			<a href="tel:+7(495) 666-02-66">Тел: +7(495) 666-02-66</a>
 		</div>	
@@ -205,7 +210,6 @@
 		<div class="footer-copyright">
 		<p>Website by</p>
 		<a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41"></a>
-		</div>
 		</div>		
 	</footer>
 	</div>
