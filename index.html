@@ -7,10 +7,6 @@
 	<link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 	<style>
-		.pic {
-			text-align: center;
-			padding-top: 61px;
-		}
 		ul {
 		 margin-left: 0; /* Отступ слева в браузере IE и Opera */
 		 padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
@@ -43,7 +39,6 @@
   	     </header>
     <main>
 		<div class="intro">	
-			<p class="pic"><img src="img/welcome.png" width="459px" height="353px" alt="Welcome"></p>
 			<h1 class="visually-hidden">Проект Седона</h1>
 		</div>
 		<div class="info-city">
@@ -60,7 +55,7 @@
 					<h2>Настоящий городок</h2>
 					<span class="cause-number">	— №1 —</span>
 					<p>
-						Седона — не аттракцион для туристов, там течет своя жизнь
+						Седона — не аттракцион для туристов, <br>там течет своя жизнь
 					</p>
 				</div>
 			<div class="feature-picture">
@@ -73,7 +68,7 @@
 						<img src="img/icon-1.svg" width="75" height="72" alt="Жилье">
 					</div>	
 					<h2>Жильё</h2>
-					<p>Рекомендуем пожить в настоящем мотеле, все как в кино!
+					<p>Рекомендуем пожить в настоящем <br>мотеле, все как в кино!
 					</p>
 				</div>
 				<div class="description">
@@ -81,7 +76,7 @@
 						<img src="img/icon-3.svg" width="74" height="70" alt="Еда">
 					</div>	
 					<h2>Еда</h2>
-					<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!
+					<p>Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!
 					</p>
 				</div>
 				<div class="description">
@@ -92,7 +87,7 @@
 						Сувениры
 					</h2>
 					<p>
-						Не только китайского, но и местного производства!
+						Не только китайского, но и местного<br> производства!
                     </p>
 				</div>
 			</div>
@@ -112,92 +107,114 @@
                     </p>
 				</div>
 			</div>
-			<div class="cause">
-				<div class="description">
+			<div class="more-cause">
+				<div class="more-description">
 					<h2>
-						Небольшая площадь
+						Небольшая <br>площадь
 					</h2>
 					<span class="cause-number">
 						— №3 —
 					</span>
 					<p>
-						Все достопримечательности находятся очень близко
+						Все достопримечательности <br>находятся очень близко
 					</p>
 				</div>
-				<div class="description">
+				<div class="more-description">
 					<h2>
-						Красивая дорога
+						Красивая <br>дорога
 					</h2>
 					<span class="cause-number">
 						— №4 —
 					</span>
 					<p>
-						Ехать в Седону из Лас-Вегаса совсем не скучно!
+						Ехать в Седону из Лас-Вегаса совсем <br>не скучно!
                     </p>
 				</div>
-				<div class="description">
+				<div class="more-description">
 					<h2>
-						Мало туристов
+						Мало <br>туристов
 					</h2>
 					<span class="cause-number">
 						— №5 —
 					</span>
 					<p>
-						Большинство едет в Гранд Каньен и толпится там
+						Большинство едет в Гранд Каньен<br> и толпится там
                     </p>
 				</div>
 			</div>	
 		</section>
-		<section class="search">
-			<h2>
+		<section class="interest-block">
+			<div class="interest-item">
+			 <h3>
 				Заинтересовались?
-			</h2>
+			 </h3>
 			<p>
 				Укажите предполагаемые даты поездки, <br>
 				и мы покажем вам лучшие предложения гостиниц в Седоне
 			</p>
-			<button type="button" id="search" class="button-search">Поиск гостиницы в Седоне</button>
-		    <div class="modal-search">
-				<form class="search-form" action="#" method="POST">
-				  <div class="fields">
-					  <label for="arrival-date">Дата заезда:</label>
-					  <input type="text" name="arrival-date" id="arrival-date" placeholder="24 апреля 2017" required> 
-					  <span class="fields-after"></span>
-				  </div>
-				  <div class="fields">
-					  <label for="departure-date">Дата выезда:</label>
-					  <input type="text" name="departure-date" id="departure-date" placeholder="4 июля 2017" required> 
-					  <span class="fields-after"></span>
-					  
-				  </div>
-				  <div class="search-quantity">
-					  <label for="adults">Взрослые:</label>
-					  <div class="adult">
-						  <button type="range" class="button-minus">-</button>
-						  <input type="text" name="adults" id="adults" value="2">
-						  <button type="button" class="button-plus">+</button>
-					  </div>
-				  </div>
-				  <div class="search-quantity">
-					  <label for="children">Дети:</label>
-					  <div class="child">
-						  <button type="button" class="button-minus">-</button>
-						  <input type="text" name="children" id="children" value="0">
-						  <button type="button" class="button-plus">+</button>
-					  </div>
-				  </div>
-				  <button type="button">Найти</button>	
-				</form>
-			</div>		  	
-		</section>
-		<div id="map" class="map">
-			<h2 class="visually-hidden">Карта</h2>
-		<p>
-			<img src="img/map.png" width="1200" height="593" alt="Расположение на карте города Седона">
-		</p>
+			<a class="search-button" href="#"> Поиск гостиницы в Седоне</a>
 		</div>
+		</section>
+		<section class="map">    	  	
+			<form class="search-form search-form-visible" action="#" method="POST">
+				<label class="entry" for="arrival-date">Дата заезда:
+					<a class="arrival-date-cal" href="#">
+						<span class="icon-calendar"></span>
+						<svg height="22" viewbox="0 0 21 22" width="21" xmlns="http://www.w3.org/2000/svg">
+							<path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" />
+							<path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" />
+						  </svg>
+					</a>
+				</label>
+				<input type="text" name="arrival-date" id="arrival-date" placeholder="24 апреля 2017" required> 
+				<label class="departure" for="departure-date">Дата выезда:
+					<a class="departure-date-cal" href="#">
+						<span class="icon-calendar"></span>
+						<svg height="22" viewbox="0 0 21 22" width="21" xmlns="http://www.w3.org/2000/svg">
+							<path d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z" />
+							<path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" />
+						  </svg>
+					</a>
+				</label>
+				<input type="text" name="departure-date" id="departure-date" placeholder="4 июля 2017" required> 
+				<div class="amount">
+					<label for="amount-adults">Взрослые:</label>
+					<button type="button" name="minus-adult">
+						<span class="icon-minus"></span>
+						<svg height="12" viewbox="0 0 32 32" width="12">
+							<path d="M0 13v6c0 0.552 0.448 1 1 1h30c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1h-30c-0.552 0-1 0.448-1 1z"></path>
+						</svg>
+					</button>
+				<input type="text" name="amount-adults" value="2" id="amount-adults">
+				<button type="button" name="plus-adult">
+					<span class="icon-plus"></span>
+					<svg height="11" viewbox="0 0 32 32" width="11">
+						<path d="M31 12h-11v-11c0-0.552-0.448-1-1-1h-6c-0.552 0-1 0.448-1 1v11h-11c-0.552 0-1 0.448-1 1v6c0 0.552 0.448 1 1 1h11v11c0 0.552 0.448 1 1 1h6c0.552 0 1-0.448 1-1v-11h11c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1z"></path>
+					</svg>
+				</button>
+				<label for="amount-children">Дети:</label>
+				<button type="button" name="minus-children">
+					<span class="icon-minus"></span>
+					<svg height="12" viewbox="0 0 32 32" width="12">
+						<path d="M0 13v6c0 0.552 0.448 1 1 1h30c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1h-30c-0.552 0-1 0.448-1 1z"></path>
+					</svg>
+				</button>
+				<input type="text" name="amount-children" value="0" id="amount-children">
+				<button type="button" name="plus-children">
+					<span class="icon-plus"></span>
+					<svg height="11" viewbox="0 0 32 32" width="11">
+						<path d="M31 12h-11v-11c0-0.552-0.448-1-1-1h-6c-0.552 0-1 0.448-1 1v11h-11c-0.552 0-1 0.448-1 1v6c0 0.552 0.448 1 1 1h11v11c0 0.552 0.448 1 1 1h6c0.552 0 1-0.448 1-1v-11h11c0.552 0 1-0.448 1-1v-6c0-0.552-0.448-1-1-1z"></path>
+					</svg>
+				</button>
+				</div>
+				<button type="submit">Найти</button>		 
+			</form>
+				<p>
+					<img src="img/map.png" width="1200" height="593" alt="Расположение на карте города Седона">
+				</p>
+		</section>
 	</main>
-	<footer class="footer">
+	<footer class="page-footer">
 		<div class="footer-link">
 			<a href="https://instaframm.com">#VISITSEDONA</a>
 			<a href="tel:+7(495) 666-02-66">Тел: +7(495) 666-02-66</a>
@@ -212,6 +229,5 @@
 		<a class="copyright" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-htmlacademy.svg" width="115" height="41"></a>
 		</div>		
 	</footer>
-	</div>
   </body>
 </html>
