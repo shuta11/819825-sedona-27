@@ -42,37 +42,41 @@
       <main>
         <section class="filters">
             <form class="filter-fields" action="#" method="get">
-                <div class="filters-infrastructure">
+                <div class="filters-infrastructure search-form__infra">
+                  <fieldset>
                     <h3>Инфраструктура:</h3>
-                    <input type="checkbox" name="pool" id="pool" checked>
-                    <label for="pool">
-                        Бассейн
-                    </label>
-                    <input type="checkbox" name="parking" id="parking">
-                    <label for="parking">
-                        Парковка
-                    </label>
-                    <input type="checkbox" name="wi-fi" id="wi-fi">
-                    <label for="wi-fi">
-                        WI-FI
-                    </label>
+                  <label>
+                    <input type="checkbox" class="visually-hidden" name="pool" checked>Бассейн
+                    <span class="checkbox-indicator"></span>
+                  </label>
+                  <label>
+                    <input type="checkbox" class="visually-hidden" name="parking">Парковка
+                  <span class="checkbox-indicator"></span>
+                  </label>
+                  <label>
+                    <input type="checkbox" class="visually-hidden" name="wi-fi">Wi-Fi
+                  <span class="checkbox-indicator"></span>
+                  </label>
+                </fieldset>
                 </div>
-                <div class="filters-type-housing">
+                <div class="filters-type-housing search-form__housing">
+                  <fieldset>
                     <h3>Тип жилья:</h3>
-                    <input type="checkbox" name="hotel" id="hotel" checked>
-                    <label for="checkbox04">
-                        Гостиница
+                    <label>
+                    <input type="checkbox" class="visually-hidden" name="hotel" checked>Гостиница
+                    <span class="checkbox-indicator"></span>
                     </label>
-                    <input type="checkbox" name="motel" id="motel" checked>
-                    <label for="motel">
-                        Мотель
+                    <label>
+                    <input type="checkbox" class="visually-hidden" name="motel" checked>Мотель
+                    <span class="checkbox-indicator"></span>
                     </label>
-                    <input type="checkbox" name="apartments" id="apartments" checked>
-                    <label for="apartments">
-                        Апартаменты
+                    <label>
+                    <input type="checkbox" class="visually-hidden" name="apartments" checked>Апартаменты 
+                    <span class="checkbox-indicator"></span>
                     </label>
+                    </fieldset>
                 </div>
-                <div class="filters-price">
+                <div class="filters-price search-form__price">
                     <h3>Стоимость в сутки(р):</h3>
                     <div class="range-price">
                         <label class="min-price">
@@ -102,8 +106,18 @@
                 <a class="rating" href="#">По рейтингу</a>
             </div>
             <div class="sorting-up-down">
-                <a class="sorting-up active" href="#"></a>
-                <a class="sorting-down" href="#"></a>
+              <ul class="sorting-list">
+                <li>
+                <a href="#">
+                  <span class="icon-up-dir"></span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <span class="icon-down-dir active"></span>
+                </a>
+              </li>
+             </ul>   
             </div>
         </section>
         <section class="results">
@@ -111,7 +125,7 @@
                 <div class="results-img">
                  <img src="img/amara resort&spa.jpg" width="135" height="90" alt="Amara Resort & Spa">
                 </div>
-              <div class="results-description">
+                <div class="results-description">
                 <h1 class="results-description-header">
                   <a href="#">Amara Resort & Spa</a>    
                 </h1>    
@@ -125,7 +139,7 @@
                   <br>
                   <a href="#">Забронировать</a>  
                 </div>
-              </div>
+                </div>
               <div class="results-rating">
                   <div class="rating-stars>
                     <span class="icon-star"></span>
@@ -150,12 +164,12 @@
                     <span>Мотель</span>
                     <br>
                     <a href="#">Подробнее</a>  
-                </div>
-                <div class="results-book">
+                  </div>
+                  <div class="results-book">
                     <span>от 3000 р.</span>
                     <br>
                     <a href="#">Забронировать</a>  
-                </div>
+                  </div>
                </div>
                 <div class="results-rating">
                     <div class="rating-stars">
@@ -163,7 +177,6 @@
                       <span class="icon-star"></span>
                       <span class="icon-star"></span>
                     </div>
-                </div>   
                     <div class="results-number">
                       <span>Рейтинг 8,9</span>
                     </div>
