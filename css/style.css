@@ -1112,27 +1112,6 @@ footer{
   fill: #81b3d2;
 }
 
-/*
-.sorting-up-down {
-  text-align:right;
-  width: 110px;
-}
-
-.sorting-up-down ul {
-  -webkit-box-pack: end;
-  justify-content: flex-end;
-  padding-right: 8px;
-}
-
-.sorting-list li {
-  display: block;
-  padding-left: 12px;
-  height: 19px;
-  width: 10px;
-}*/
-
-
-
 .results{
   display: flex;
   position: relative;
@@ -1269,8 +1248,6 @@ footer{
   font-size: 19px;
   line-height: 21px;
 }
-
-
 
  .results-number span{
   color: #666666;
