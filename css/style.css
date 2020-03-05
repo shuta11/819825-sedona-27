@@ -758,7 +758,7 @@ footer{
 
 .footer-copyright {
   text-align: center;
-  vertical-align: middle;
+  /*vertical-align: middle;*/
   margin-top: 4px;
   margin-bottom: 0;
   font-family: "PT Sans","Arial",sans-serif;
@@ -769,7 +769,6 @@ footer{
 }
 
 .footer-copyright-link svg{
-   vertical-align: middle;
    margin-left: 8px;
 }
 
